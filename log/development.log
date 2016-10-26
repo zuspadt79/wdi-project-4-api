@@ -2954,3 +2954,1376 @@ Processing by AuthenticationsController#login as HTML
 Completed 200 OK in 129ms (Views: 10.5ms | ActiveRecord: 6.8ms)
 
 
+Started POST "/api/login" for 127.0.0.1 at 2016-10-25 19:43:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.92ms)
+Completed 200 OK in 134ms (Views: 9.3ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-25 20:00:30 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/zuspadt/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zuspadt/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (5.8ms)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2016-10-25 20:00:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started POST "/api/login" for 127.0.0.1 at 2016-10-25 20:39:40 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.56ms)
+Completed 200 OK in 89ms (Views: 2.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-25 20:51:27 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"user"=>{"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "authentication"=>{"user"=>{"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 53ms (Views: 0.5ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-25 20:52:30 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"user"=>{"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "authentication"=>{"user"=>{"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 5ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-25 20:54:49 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kenny"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 107ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-25 20:56:07 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kenny"], ["LIMIT", 1]]
+  [1m[35mSQL (9.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "kenny"], ["email", "kenny@kenny.com"], ["password_digest", "$2a$10$5wrrfkrmB0y/1/W8lxISheuoqnwvcoMeIQ/xiXuaUFHSsOUGgx1lS"], ["image", "kenny"], ["created_at", 2016-10-25 19:56:08 UTC], ["updated_at", 2016-10-25 19:56:08 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.18ms)
+Completed 200 OK in 135ms (Views: 8.1ms | ActiveRecord: 18.4ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-25 20:56:09 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kenny"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 422 Unprocessable Entity in 102ms (Views: 4.3ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-25 20:59:15 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kenny"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 422 Unprocessable Entity in 120ms (Views: 9.5ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-25 21:03:51 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"kenny", "image"=>"kenny", "email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kenny"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 422 Unprocessable Entity in 50ms (Views: 8.2ms | ActiveRecord: 7.2ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-25 21:16:48 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"kenny", "email"=>"kenny@kenny.com", "image"=>"kenny", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"kenny", "email"=>"kenny@kenny.com", "image"=>"kenny", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kenny"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 422 Unprocessable Entity in 18ms (Views: 3.0ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 08:32:06 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"kenny", "email"=>"kenny@kenny.com", "image"=>"kenny", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"kenny", "email"=>"kenny@kenny.com", "image"=>"kenny", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (3.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (15.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kenny"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.54ms)
+Completed 422 Unprocessable Entity in 64ms (Views: 8.9ms | ActiveRecord: 22.3ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 09:53:04 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"kenny", "email"=>"kenny@kenny.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"kenny", "email"=>"kenny@kenny.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "kenny"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.89ms)
+Completed 422 Unprocessable Entity in 24ms (Views: 9.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 10:38:18 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (13.09ms)
+Completed 200 OK in 143ms (Views: 15.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 10:38:20 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 200 OK in 82ms (Views: 2.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 10:38:20 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.39ms)
+Completed 200 OK in 90ms (Views: 3.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 10:38:20 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Completed 200 OK in 84ms (Views: 2.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 10:38:21 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Completed 200 OK in 86ms (Views: 2.0ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 10:38:21 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Completed 200 OK in 92ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 10:38:21 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 200 OK in 84ms (Views: 1.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 10:38:21 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 200 OK in 80ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 11:10:55 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"dan", "email"=>"dan@dan.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"dan", "email"=>"dan@dan.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dan"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 7ms (Views: 1.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 11:10:57 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"dan", "email"=>"dan@dan.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"dan", "email"=>"dan@dan.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dan"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 7ms (Views: 1.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 11:34:33 +0100
+Processing by AuthenticationsController#register as HTML
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 12ms (Views: 1.7ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 11:37:08 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"tim", "email"=>"tim@tim.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"tim", "email"=>"tim@tim.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tim"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 422 Unprocessable Entity in 7ms (Views: 2.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 11:47:22 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"tim", "email"=>"tim@tim.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"tim", "email"=>"tim@tim.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tim"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 6ms (Views: 1.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 11:48:15 +0100
+Processing by AuthenticationsController#register as HTML
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 7ms (Views: 1.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 12:13:42 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"tim", "email"=>"tim@tim.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"tim", "email"=>"tim@tim.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tim"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 74ms (Views: 4.9ms | ActiveRecord: 50.5ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 12:16:14 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"tim", "email"=>"tim@tim.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"tim", "email"=>"tim@tim.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tim"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 422 Unprocessable Entity in 51ms (Views: 9.1ms | ActiveRecord: 7.8ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 12:22:40 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"tom", "email"=>"tom@tom.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"tom", "email"=>"tom@tom.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tom"], ["LIMIT", 1]]
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "tom"], ["email", "tom@tom.com"], ["password_digest", "$2a$10$5OUZ986hr1D6cW/E.cTE/uW5SV/R8s5NGZO.yCVdI0/rPMWEKi0Yi"], ["image", "http://fillmurray.com/200/200"], ["created_at", 2016-10-26 11:22:40 UTC], ["updated_at", 2016-10-26 11:22:40 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.55ms)
+Completed 200 OK in 131ms (Views: 9.4ms | ActiveRecord: 13.0ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 12:22:44 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"tom", "email"=>"tom@tom.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"tom", "email"=>"tom@tom.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tom"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 92ms (Views: 1.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 12:29:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"bob", "email"=>"bob@bob.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"bob", "email"=>"bob@bob.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bob"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "bob"], ["email", "bob@bob.com"], ["password_digest", "$2a$10$1qm5hlikvkR336sKcxouAuDbpzQS5hr33jqgh.3Vzy1iGaP88jtBG"], ["image", "http://fillmurray.com/200/200"], ["created_at", 2016-10-26 11:29:06 UTC], ["updated_at", 2016-10-26 11:29:06 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.22ms)
+Completed 200 OK in 133ms (Views: 11.8ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 12:31:24 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 200 OK in 105ms (Views: 3.0ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 12:31:28 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 200 OK in 83ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 12:38:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.18ms)
+Completed 200 OK in 125ms (Views: 9.1ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/api/users/6" for ::1 at 2016-10-26 12:40:18 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.71ms)
+Completed 200 OK in 8ms (Views: 1.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/users/6" for ::1 at 2016-10-26 12:40:29 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.27ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:43:09 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/6" for ::1 at 2016-10-26 12:43:09 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.27ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/6" for ::1 at 2016-10-26 12:43:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:44:47 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/6" for ::1 at 2016-10-26 12:44:47 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:49:07 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/6" for ::1 at 2016-10-26 12:49:07 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:49:43 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:49:49 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:50:17 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.27ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:51:30 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:52:03 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:52:53 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.68ms)
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:54:00 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:56:40 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:59:03 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:59:29 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 12:59:49 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:00:02 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:00:11 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.27ms)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:00:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:00:58 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:01:20 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:01:39 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:01:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:01:45 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:02:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:02:17 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:02:18 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.72ms)
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:02:21 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.82ms)
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:02:34 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:02:49 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:02:51 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:03:04 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:03:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:03:06 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:03:11 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:03:13 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:03:20 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:03:22 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.7ms)
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:03:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:03:24 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:03:46 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:03:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:04:34 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:06:59 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 21ms (Views: 0.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:07:04 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:07:10 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.27ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:08:14 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:08:15 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:08:50 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:09:15 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:09:25 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:09:32 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.69ms)
+Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:09:33 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:10:40 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.82ms)
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:11:24 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.68ms)
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:11:42 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 7ms (Views: 1.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:12:03 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:12:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:12:07 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:12:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.42ms)
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:12:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:12:45 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/users/6?exp=1480073928" for ::1 at 2016-10-26 13:12:47 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480073928", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 14:37:32 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.54ms)
+Completed 200 OK in 117ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 14:37:32 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.27ms)
+Completed 200 OK in 111ms (Views: 1.1ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 14:37:34 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.29ms)
+Completed 200 OK in 97ms (Views: 2.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 14:38:56 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.44ms)
+Completed 200 OK in 102ms (Views: 2.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 14:40:09 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.5ms)
+Completed 200 OK in 111ms (Views: 2.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/6" for ::1 at 2016-10-26 14:40:10 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 10ms (Views: 1.1ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/api/users/6" for ::1 at 2016-10-26 14:40:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/6" for ::1 at 2016-10-26 14:40:25 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/6" for ::1 at 2016-10-26 14:40:27 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/users/6" for ::1 at 2016-10-26 14:40:28 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.38ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 14:49:49 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.33ms)
+Completed 200 OK in 94ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/6?exp=1480081789" for ::1 at 2016-10-26 14:50:20 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480081789", "id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 14:50:30 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.27ms)
+Completed 200 OK in 94ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-26 14:51:16 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.32ms)
+Completed 200 OK in 93ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (144.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "bibliobibulio_development"[0m
+  [1m[35m (130.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "bibliobibulio_test"[0m
+  [1m[35m (395.2ms)[0m  [1m[35mCREATE DATABASE "bibliobibulio_development" ENCODING = 'unicode'[0m
+  [1m[35m (255.1ms)[0m  [1m[35mCREATE DATABASE "bibliobibulio_test" ENCODING = 'unicode'[0m
+  [1m[35m (24.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7370866344790287885);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20161024144530)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" character varying, "password_digest" character varying, "image" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161024144530"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-10-26 13:56:12 UTC], ["updated_at", 2016-10-26 13:56:12 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7370866344790287885)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7370866344790287885);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateBooks (20161026135821)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "books" ("id" serial primary key, "title" character varying, "image" character varying, "author" character varying, "isbn" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_bc582ddd02"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_books_on_user_id" ON "books"  ("user_id")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161026135821"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7370866344790287885)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'books'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started POST "/api/login" for 127.0.0.1 at 2016-10-26 15:07:01 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 401 Unauthorized in 27ms (Views: 3.8ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2016-10-26 15:07:11 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 401 Unauthorized in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2016-10-26 15:07:12 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 401 Unauthorized in 3ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/6?exp=1480081876" for ::1 at 2016-10-26 15:08:20 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480081876", "id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 12ms (Views: 1.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/api/users/6?exp=1480081876" for ::1 at 2016-10-26 15:08:22 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480081876", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.4ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/6?exp=1480081876" for ::1 at 2016-10-26 15:08:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480081876", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/register" for ::1 at 2016-10-26 15:08:45 +0100
+Processing by AuthenticationsController#register as HTML
+  Parameters: {"username"=>"Kenny", "email"=>"kenny@kenny.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "authentication"=>{"username"=>"Kenny", "email"=>"kenny@kenny.com", "image"=>"http://fillmurray.com/200/200", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from merge! at /Users/zuspadt/development/wdi-project-4/wdi-project-4-api/app/controllers/authentications_controller.rb:27)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Kenny"], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Kenny"], ["email", "kenny@kenny.com"], ["password_digest", "$2a$10$pkujxZGQPNBMtMRuh.Lx4eopiR.Iy5n07vf0bGt/WzItJe8Vk1tIC"], ["image", "http://fillmurray.com/200/200"], ["created_at", 2016-10-26 14:08:45 UTC], ["updated_at", 2016-10-26 14:08:45 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers]   [1m[36mBook Load (1.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (42.26ms)
+Completed 200 OK in 177ms (Views: 39.8ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2016-10-26 15:08:51 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"kenny@kenny.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"kenny@kenny.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kenny@kenny.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.91ms)
+Completed 200 OK in 97ms (Views: 3.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/books" for 127.0.0.1 at 2016-10-26 15:12:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#create as HTML
+  Parameters: {"title"=>"Test", "image"=>"http://www.fillmurray.com/300/300", "author"=>"rane", "isbn"=>" iuh48v398fc", "book"=>{"title"=>"Test", "image"=>"http://www.fillmurray.com/300/300", "author"=>"rane", "isbn"=>" iuh48v398fc"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "image", "author", "isbn", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test"], ["image", "http://www.fillmurray.com/300/300"], ["author", "rane"], ["isbn", " iuh48v398fc"], ["user_id", 1], ["created_at", 2016-10-26 14:12:37 UTC], ["updated_at", 2016-10-26 14:12:37 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Attributes (0.41ms)
+Completed 201 Created in 81ms (Views: 11.4ms | ActiveRecord: 18.7ms)
+
+
+Started POST "/api/users/1" for 127.0.0.1 at 2016-10-26 15:12:53 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/users/1"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started POST "/api/users/2" for 127.0.0.1 at 2016-10-26 15:12:59 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/users/2"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started POST "/api/users/1" for 127.0.0.1 at 2016-10-26 15:13:01 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/users/1"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/api/users/1" for 127.0.0.1 at 2016-10-26 15:13:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"title"=>"Test", "image"=>"http://www.fillmurray.com/300/300", "author"=>"rane", "isbn"=>" iuh48v398fc", "id"=>"1", "user"=>{"image"=>"http://www.fillmurray.com/300/300"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (10.0ms)
+Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 1.2ms)
+
+

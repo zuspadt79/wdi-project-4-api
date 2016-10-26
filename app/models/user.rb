@@ -4,4 +4,5 @@ class User < ApplicationRecord
   # has_secure_password gives validation to password
   # has_secure_password gives validation to password_confirmation
   validates :username, presence: true, uniqueness: true
+  has_many :books
 end
