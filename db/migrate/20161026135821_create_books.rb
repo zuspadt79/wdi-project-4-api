@@ -5,6 +5,7 @@ class CreateBooks < ActiveRecord::Migration[5.0]
       t.string :image
       t.string :author
       t.string :isbn
+      t.string :status
       t.references :user, foreign_key: true
 
       t.timestamps
