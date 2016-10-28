@@ -14297,3 +14297,803 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:19:23 +0100
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:19:23 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (49.21ms)
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (50.89ms)
+Completed 200 OK in 108ms (Views: 62.9ms | ActiveRecord: 17.9ms)
+
+
+Completed 200 OK in 108ms (Views: 54.2ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:36:18 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.6ms)
+Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:39:01 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.75ms)
+Completed 200 OK in 10ms (Views: 5.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:40:47 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.69ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:40:58 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.7ms)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:13 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.96ms)
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:15 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.99ms)
+Completed 200 OK in 16ms (Views: 10.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:15 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.7ms)
+Completed 200 OK in 11ms (Views: 6.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.78ms)
+Completed 200 OK in 11ms (Views: 5.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.25ms)
+Completed 200 OK in 10ms (Views: 5.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:17 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.69ms)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:17 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.18ms)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:33 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.45ms)
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:36 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.31ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.01ms)
+Completed 200 OK in 12ms (Views: 7.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:44 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.77ms)
+Completed 200 OK in 11ms (Views: 6.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:45 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.44ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.19ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:52 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.85ms)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:41:52 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.11ms)
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:44:00 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.79ms)
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:45:30 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.5ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:03 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.87ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.57ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:06 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.58ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:06 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.79ms)
+Completed 200 OK in 8ms (Views: 4.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:07 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.04ms)
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:07 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.43ms)
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:12 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.11ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:14 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.56ms)
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:15 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.46ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:15 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.75ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.25ms)
+Completed 200 OK in 8ms (Views: 3.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.8ms)
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:17 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.93ms)
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:31 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.67ms)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:46:32 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.19ms)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:48:11 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.82ms)
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/1?exp=1480183039" for ::1 at 2016-10-27 19:49:13 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480183039", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.2ms)
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 19:53:27 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.97ms)
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-27 19:56:42 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.87ms)
+Completed 200 OK in 132ms (Views: 30.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/books/to_read" for ::1 at 2016-10-27 19:57:12 +0100
+Processing by BooksController#to_read as HTML
+  Parameters: {"book"=>{"title"=>"Eloquent JavaScript", "image"=>"http://books.google.com/books/content?id=9U5I_tskq9MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", "author"=>"Marijn Haverbeke", "isbn"=>"9U5I_tskq9MC"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (2.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = $1 AND "books"."title" = $2 LIMIT $3[0m  [["user_id", 1], ["title", "Eloquent JavaScript"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "image", "author", "isbn", "status", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Eloquent JavaScript"], ["image", "http://books.google.com/books/content?id=9U5I_tskq9MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"], ["author", "Marijn Haverbeke"], ["isbn", "9U5I_tskq9MC"], ["status", "to_read"], ["user_id", 1], ["created_at", 2016-10-27 18:57:12 UTC], ["updated_at", 2016-10-27 18:57:12 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Attributes (0.51ms)
+Completed 201 Created in 28ms (Views: 3.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 19:57:12 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.32ms)
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/api/books/5" for ::1 at 2016-10-27 19:57:22 +0100
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 7ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 19:57:22 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.77ms)
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/books/read" for ::1 at 2016-10-27 19:57:24 +0100
+Processing by BooksController#read as HTML
+  Parameters: {"book"=>{"id"=>6, "title"=>"Eloquent JavaScript", "image"=>"http://books.google.com/books/content?id=9U5I_tskq9MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", "author"=>"Marijn Haverbeke", "isbn"=>"9U5I_tskq9MC", "user_id"=>1, "status"=>"to_read"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = $1 AND "books"."title" = $2 LIMIT $3[0m  [["user_id", 1], ["title", "Eloquent JavaScript"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.3ms)[0m  [1m[33mUPDATE "books" SET "status" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["status", "read"], ["updated_at", 2016-10-27 18:57:25 UTC], ["id", 6]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Attributes (0.74ms)
+Completed 201 Created in 31ms (Views: 1.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 19:57:25 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.15ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/1?exp=1480186602" for ::1 at 2016-10-27 20:38:34 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480186602", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (13.92ms)
+Completed 200 OK in 35ms (Views: 17.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/users/1?exp=1480186602" for ::1 at 2016-10-27 20:47:06 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480186602", "id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.62ms)
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-27 20:52:27 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.58ms)
+Completed 200 OK in 96ms (Views: 6.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/books/to_read" for ::1 at 2016-10-27 20:52:48 +0100
+Processing by BooksController#to_read as HTML
+  Parameters: {"book"=>{"title"=>"The Castle", "image"=>"http://books.google.com/books/content?id=6-FEztrDXTsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", "author"=>"Franz Kafka", "isbn"=>"6-FEztrDXTsC"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (1.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = $1 AND "books"."title" = $2 LIMIT $3[0m  [["user_id", 1], ["title", "The Castle"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "image", "author", "isbn", "status", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Castle"], ["image", "http://books.google.com/books/content?id=6-FEztrDXTsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"], ["author", "Franz Kafka"], ["isbn", "6-FEztrDXTsC"], ["status", "to_read"], ["user_id", 1], ["created_at", 2016-10-27 19:52:48 UTC], ["updated_at", 2016-10-27 19:52:48 UTC]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 201 Created in 67ms (Views: 1.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 20:52:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.32ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/api/books/4" for ::1 at 2016-10-27 20:52:58 +0100
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 20:52:58 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.46ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/books/read" for ::1 at 2016-10-27 20:53:07 +0100
+Processing by BooksController#read as HTML
+  Parameters: {"book"=>{"id"=>7, "title"=>"The Castle", "image"=>"http://books.google.com/books/content?id=6-FEztrDXTsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", "author"=>"Franz Kafka", "isbn"=>"6-FEztrDXTsC", "user_id"=>1, "status"=>"to_read"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = $1 AND "books"."title" = $2 LIMIT $3[0m  [["user_id", 1], ["title", "The Castle"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "books" SET "status" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["status", "read"], ["updated_at", 2016-10-27 19:53:07 UTC], ["id", 7]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 201 Created in 9ms (Views: 1.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 20:53:07 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.12ms)
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-27 21:06:43 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (57.98ms)
+Completed 200 OK in 189ms (Views: 58.2ms | ActiveRecord: 10.9ms)
+
+
+Started POST "/api/books/to_read" for ::1 at 2016-10-27 21:07:18 +0100
+Processing by BooksController#to_read as HTML
+  Parameters: {"book"=>{"title"=>"Love Does", "image"=>"http://books.google.com/books/content?id=kRUz8yq4HJUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", "author"=>"Bob Goff", "isbn"=>"kRUz8yq4HJUC"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = $1 AND "books"."title" = $2 LIMIT $3[0m  [["user_id", 1], ["title", "Love Does"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "image", "author", "isbn", "status", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Love Does"], ["image", "http://books.google.com/books/content?id=kRUz8yq4HJUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"], ["author", "Bob Goff"], ["isbn", "kRUz8yq4HJUC"], ["status", "to_read"], ["user_id", 1], ["created_at", 2016-10-27 20:07:18 UTC], ["updated_at", 2016-10-27 20:07:18 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 201 Created in 18ms (Views: 1.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 21:07:18 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.97ms)
+Completed 200 OK in 11ms (Views: 6.2ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/api/books/8" for ::1 at 2016-10-27 21:07:33 +0100
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 8]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 6ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 21:07:33 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.87ms)
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-27 21:11:11 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.8ms)
+Completed 200 OK in 99ms (Views: 2.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/books/to_read" for ::1 at 2016-10-27 21:12:47 +0100
+Processing by BooksController#to_read as HTML
+  Parameters: {"book"=>{"title"=>"JavaScript: The Good Parts", "image"=>"http://books.google.com/books/content?id=PXa2bby0oQ0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", "author"=>"Douglas Crockford", "isbn"=>"PXa2bby0oQ0C"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = $1 AND "books"."title" = $2 LIMIT $3[0m  [["user_id", 1], ["title", "JavaScript: The Good Parts"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "books" ("title", "image", "author", "isbn", "status", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "JavaScript: The Good Parts"], ["image", "http://books.google.com/books/content?id=PXa2bby0oQ0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"], ["author", "Douglas Crockford"], ["isbn", "PXa2bby0oQ0C"], ["status", "to_read"], ["user_id", 1], ["created_at", 2016-10-27 20:12:47 UTC], ["updated_at", 2016-10-27 20:12:47 UTC]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 201 Created in 13ms (Views: 1.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 21:12:47 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.24ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/books/read" for ::1 at 2016-10-27 21:12:54 +0100
+Processing by BooksController#read as HTML
+  Parameters: {"book"=>{"id"=>9, "title"=>"JavaScript: The Good Parts", "image"=>"http://books.google.com/books/content?id=PXa2bby0oQ0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", "author"=>"Douglas Crockford", "isbn"=>"PXa2bby0oQ0C", "user_id"=>1, "status"=>"to_read"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = $1 AND "books"."title" = $2 LIMIT $3[0m  [["user_id", 1], ["title", "JavaScript: The Good Parts"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "books" SET "status" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["status", "read"], ["updated_at", 2016-10-27 20:12:54 UTC], ["id", 9]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 201 Created in 12ms (Views: 1.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 21:12:54 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.85ms)
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-27 21:14:18 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.01ms)
+Completed 200 OK in 93ms (Views: 3.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/1?exp=1480191258" for ::1 at 2016-10-27 21:14:31 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"exp"=>"1480191258", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.05ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/login" for ::1 at 2016-10-27 23:24:27 +0100
+Processing by AuthenticationsController#login as HTML
+  Parameters: {"email"=>"sam@sam.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"sam@sam.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sam@sam.com"], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (18.26ms)
+Completed 200 OK in 116ms (Views: 20.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/books/to_read" for ::1 at 2016-10-27 23:25:33 +0100
+Processing by BooksController#to_read as HTML
+  Parameters: {"book"=>{"title"=>"Margaret Atwood", "image"=>"http://books.google.com/books/content?id=CLOdJVBM3MEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", "author"=>"Nathalie Cooke", "isbn"=>"CLOdJVBM3MEC"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = $1 AND "books"."title" = $2 LIMIT $3[0m  [["user_id", 1], ["title", "Margaret Atwood"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "image", "author", "isbn", "status", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Margaret Atwood"], ["image", "http://books.google.com/books/content?id=CLOdJVBM3MEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"], ["author", "Nathalie Cooke"], ["isbn", "CLOdJVBM3MEC"], ["status", "to_read"], ["user_id", 1], ["created_at", 2016-10-27 22:25:33 UTC], ["updated_at", 2016-10-27 22:25:33 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Attributes (0.53ms)
+Completed 201 Created in 26ms (Views: 2.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 23:25:33 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (12.29ms)
+Completed 200 OK in 20ms (Views: 14.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/books/read" for ::1 at 2016-10-27 23:25:42 +0100
+Processing by BooksController#read as HTML
+  Parameters: {"book"=>{"id"=>10, "title"=>"Margaret Atwood", "image"=>"http://books.google.com/books/content?id=CLOdJVBM3MEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api", "author"=>"Nathalie Cooke", "isbn"=>"CLOdJVBM3MEC", "user_id"=>1, "status"=>"to_read"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."user_id" = $1 AND "books"."title" = $2 LIMIT $3[0m  [["user_id", 1], ["title", "Margaret Atwood"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "books" SET "status" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["status", "read"], ["updated_at", 2016-10-27 22:25:42 UTC], ["id", 10]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Attributes (1.27ms)
+Completed 201 Created in 16ms (Views: 2.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 23:25:42 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.5ms)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/api/books/10" for ::1 at 2016-10-27 23:25:56 +0100
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 10]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 6ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 23:25:56 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.49ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/api/books/2" for ::1 at 2016-10-27 23:26:03 +0100
+Processing by BooksController#destroy as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 7ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/api/users/1" for ::1 at 2016-10-27 23:26:03 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (3.5ms)
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 0.9ms)
+
+
